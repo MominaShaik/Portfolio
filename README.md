@@ -40,8 +40,6 @@ Here are some highlights from my portfolio:
 
 ### 1. Space Shooter Game
 
-<img src="https://placehold.co/600x400/CCCCCC/333333?text=Space+Shooter+Game" alt="Space Shooter Game Thumbnail">
-
 -   **Category:** Game Development
 -   **Description:** Developed an individual 2D Space Shooter Game with a scoring system, user-controlled spaceship movement, and projectile mechanics. Implemented OOP, collision detection, and event handling.
 -   **Links:**
@@ -51,8 +49,6 @@ Here are some highlights from my portfolio:
 
 ### 2. Customer Segmentation using K-Means Clustering
 
-<img src="https://placehold.co/600x400/CCCCCC/333333?text=Customer+Segmentation" alt="Customer Segmentation using K-Means Clustering">
-
 -   **Category:** Machine Learning
 -   **Description:** Built a machine learning model to predict customer churn for a telecom company using Python, Pandas, Scikit-learn, and a classification algorithm (e.g., Logistic Regression/Random Forest).
 -   **Links:**
@@ -60,8 +56,6 @@ Here are some highlights from my portfolio:
     -   [GitHub Repository](https://github.com/MominaShaik/SCT_ML_2)
 
 ### 3. House Price Prediction using Linear Regression
-
-<img src="https://placehold.co/600x400/CCCCCC/333333?text=House+Price+Prediction" alt="House Price Prediction using Linear Regression">
 
 -   **Category:** Machine Learning
 -   **Description:** Developed a Convolutional Neural Network (CNN) using TensorFlow/Keras to classify images (e.g., cat/dog, fashion items). Focused on model training, evaluation, and optimization techniques.
