@@ -1,0 +1,283 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#toggleContacts {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact-info {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #e2e6ea;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+    display: none;
+}
+
+.section-content.active {
+    display: block;
+}
+
+.what-im-doing-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.what-im-doing-item i {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #007bff;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+.resume-section h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section li {
+    margin-bottom: 8px;
+}
+
+.resume-section a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    /* Ensure this is a flex container to manage its children */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Pushes links to the bottom if content above varies */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Allows this paragraph to fill available space */
+}
+
+.project-category {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* Crucial styles for aligning the project options horizontally */
+.links-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 0.75rem; /* Spacing between the links/buttons */
+    margin-top: 1rem; /* Space above the link container */
+}
+
+.links-container a {
+    /* Tailwind classes already handle most of the styling,
+        but you can add specific overrides here if needed */
+    text-decoration: none; /* Ensure no default underline unless specified by Tailwind */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* --- NEW STYLES FOR INTERNSHIP AND CERTIFICATION BOXES --- */
+
+/* Grid containers for internships and certifications */
+.internship-grid,
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax as needed */
+    gap: 20px; /* Consistent with portfolio-grid gap */
+    margin-top: 20px; /* Space from the heading, consistent with other sections */
+}
+
+/* Individual box styling for internships and certifications */
+.internship-box,
+.certification-box {
+    background-color: white; /* Match main content background */
+    padding: 20px; /* Consistent with profile-card padding */
+    border-radius: 10px; /* Consistent with profile-card border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent with profile-card box-shadow */
+    transition: transform 0.2s ease; /* Add a subtle hover effect */
+    display: flex; /* Use flexbox to organize content vertically */
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space to push links to bottom */
+}
+
+.internship-box:hover,
+.certification-box:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+.internship-box h4,
+.certification-box h4 {
+    font-size: 1.1em; /* Adjust font size to fit your design */
+    margin-bottom: 8px; /* Space between title and description */
+    color: #333; /* Default dark text */
+}
+
+.internship-box p,
+.certification-box p {
+    font-size: 0.9em; /* Smaller text for description */
+    color: #666; /* Lighter text color */
+    line-height: 1.5;
+    margin-bottom: 15px; /* Space before links */
+    flex-grow: 1; /* Allow description to take up available space */
+}
+
+/* Styling for the links within the boxes */
+.internship-links,
+.certification-links {
+    margin-top: auto; /* Push links to the bottom */
+    text-align: right; /* Align links to the right */
+}
+
+.btn-box-link {
+    display: inline-block;
+    color: #007bff; /* Matching your primary blue color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-box-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive adjustments for new grids (consistent with existing portfolio-grid responsiveness) */
+@media (max-width: 600px) { /* Adjust breakpoint if needed */
+    .internship-grid,
+    .certification-grid {
+        grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+    }
+}
